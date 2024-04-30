@@ -13,8 +13,6 @@ import utils.gpu as gpu
 import utils.datasets as data
 from model.build_model import Build_Model
 from model.loss.yolo_loss import YoloV4Loss
-from eval_coco import *
-from eval.cocoapi_evaluator import COCOAPIEvaluator
 from eval.evaluator import *
 from utils.tools import *
 from utils import cosine_lr_scheduler
@@ -268,46 +266,28 @@ class Trainer(object):
                         random.choice(range(10, 20)) * 32
                     )
 
-            if (
-                cfg.TRAIN["DATA_TYPE"] == "VOC"
-                or cfg.TRAIN["DATA_TYPE"] == "Customer"
-            ):
-                mAP = 0.0
-                if epoch >= self.eval_epoch and epoch % 20 == 0:
-                    logger.info(
-                        "===== Validate =====".format(epoch, self.epochs)
-                    )
-                    logger.info("val img size is {}".format(cfg.VAL["TEST_IMG_SIZE"]))
-                    with torch.no_grad():
-                        APs, inference_time = Evaluator(
-                            self.yolov4, showatt=self.showatt
-                        ).APs_voc()
-                        for i in APs:
-                            logger.info("{} --> mAP : {}".format(i, APs[i]))
-                            mAP += APs[i]
-                        mAP = mAP / self.train_dataset.num_classes
-                        logger.info("mAP : {}".format(mAP))
-                        logger.info(
-                            "inference time: {:.2f} ms".format(inference_time)
-                        )
-                        writer.add_scalar("mAP", mAP, epoch)
-                        self.__save_model_weights(epoch, mAP)
-                        logger.info("save weights done")
-                    logger.info("  ===test mAP:{:.3f}".format(mAP))
-            elif epoch >= 0 and cfg.TRAIN["DATA_TYPE"] == "COCO":
-                evaluator = COCOAPIEvaluator(
-                    model_type="YOLOv4",
-                    data_dir=cfg.DATA_PATH,
-                    img_size=cfg.VAL["TEST_IMG_SIZE"],
-                    confthre=0.08,
-                    nmsthre=cfg.VAL["NMS_THRESH"],
+            mAP = 0.0
+            if epoch >= self.eval_epoch and epoch % 20 == 0:
+                logger.info(
+                    "===== Validate =====".format(epoch, self.epochs)
                 )
-                ap50_95, ap50 = evaluator.evaluate(self.yolov4)
-                logger.info("ap50_95:{}|ap50:{}".format(ap50_95, ap50))
-                writer.add_scalar("val/COCOAP50", ap50, epoch)
-                writer.add_scalar("val/COCOAP50_95", ap50_95, epoch)
-                self.__save_model_weights(epoch, ap50)
-                print("save weights done")
+                logger.info("val img size is {}".format(cfg.VAL["TEST_IMG_SIZE"]))
+                with torch.no_grad():
+                    APs, inference_time = Evaluator(
+                        self.yolov4, showatt=self.showatt
+                    ).APs_voc()
+                    for i in APs:
+                        logger.info("{} --> mAP : {}".format(i, APs[i]))
+                        mAP += APs[i]
+                    mAP = mAP / self.train_dataset.num_classes
+                    logger.info("mAP : {}".format(mAP))
+                    logger.info(
+                        "inference time: {:.2f} ms".format(inference_time)
+                    )
+                    writer.add_scalar("mAP", mAP, epoch)
+                    self.__save_model_weights(epoch, mAP)
+                    logger.info("save weights done")
+                logger.info("  ===test mAP:{:.3f}".format(mAP))
             end = time.time()
             logger.info("  ===cost time:{:.4f}s".format(end - start))
         logger.info(
