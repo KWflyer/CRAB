@@ -3,8 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import config.yolov4_config as cfg
 from .backbones.CSPDarknet53 import _BuildCSPDarknet53
-from .backbones.mobilenetv2_modify import _BuildMobilenetV2
-from .backbones.mobilenetv3 import _BuildMobilenetV3
 from .layers.global_context_block import ContextBlock2d
 
 class Conv(nn.Module):

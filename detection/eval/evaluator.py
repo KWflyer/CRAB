@@ -1,5 +1,4 @@
 import shutil
-from eval import voc_eval
 from utils.data_augment import *
 from utils.tools import *
 from tqdm import tqdm
