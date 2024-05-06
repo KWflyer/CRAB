@@ -1,10 +1,10 @@
-# Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection
+# Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection (convolutional retinal attention block:CRAB)
 
-Li Ju，Kai Wang, Mengfan He, Luyao Ke, and Heng Wang. Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection, Applied soft computing, 2024.
+Ju Li，Kai Wang, Mengfan He, Luyao Ke, and Heng Wang. Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection[J]. Applied Soft Computing, 2024: 111631. (https://doi.org/10.1016/j.asoc.2024.111631)
 
-If you find this paper is useful, please cite our paper in your research work. Thanks.
+If you find this code is useful and helpful to your work, please cite our paper in your research work. Thanks.
 
-If there are any questions about source code, please do not hesitate to contact me (kai.wang@scu.edu.cn).
+If there are any questions about source code, please do not hesitate to contact Ju Li(leeju96@qq.com) and me (kai.wang@scu.edu.cn). Special thanks to Yang Wei for helping to arrange and re-implement the code.
 
 ![the overview of CRAB](./assets/CRAB.png)
 ![The overview of the image of the magnetic tile dataset](./assets/magnetic.png)
@@ -44,5 +44,5 @@ Similarly, How to reproduce the experimental results of surface defect detection
 
 Tips: The experimental results included in the above "Experimental_Results" files are re-calculated when submitting code, which may be a slight deviation from the results reported in our paper due to the effects of randomness of choosing training samples.
 
-### reference：
+### Reference：The original Magnetic tile (MT) dataset is available at: https://github.com/abin24/Saliency-detection-toolbox
 1. Y. Huang, C. Qiu, K. Yuan, Surface defect saliency of magnetic tile, The Visual Computer 36 (2020) 85–96.
