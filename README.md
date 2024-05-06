@@ -4,7 +4,7 @@ Ju Li，Kai Wang, Mengfan He, Luyao Ke, and Heng Wang. Attention-Based Convoluti
 
 If you find this paper is useful and helpful to your work, please cite our paper in your research work. Thanks.
 
-If there are any questions about source code, please do not hesitate to contact Ju Li(leeju96@qq.com) and me (kai.wang@scu.edu.cn). Special thanks to Yang Wei for helping arranging and reimplementing the code.
+If there are any questions about source code, please do not hesitate to contact Ju Li(leeju96@qq.com) and me (kai.wang@scu.edu.cn). Special thanks to Yang Wei for helping to arrange and re-implement the code.
 
 ![the overview of CRAB](./assets/CRAB.png)
 ![The overview of the image of the magnetic tile dataset](./assets/magnetic.png)
