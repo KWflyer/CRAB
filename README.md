@@ -1,5 +1,4 @@
-# Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection 
-#(convolutional retinal attention block:CRAB)
+# Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection (convolutional retinal attention block:CRAB)
 
 Li Ju，Kai Wang, Mengfan He, Luyao Ke, and Heng Wang. Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection[J]. Applied Soft Computing, 2024: 111631. (https://doi.org/10.1016/j.asoc.2024.111631)
 
