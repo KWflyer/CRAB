@@ -1,10 +1,10 @@
 # Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection
 
-Li Ju，Kai Wang, Mengfan He, Luyao Ke, and Heng Wang. Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection, Applied soft computing, 2024.
+Li Ju，Kai Wang, Mengfan He, Luyao Ke, and Heng Wang. Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection[J]. Applied Soft Computing, 2024: 111631.
 
-If you find this paper is useful, please cite our paper in your research work. Thanks.
+If you find this paper is useful and helpful to your work, please cite our paper in your research work. Thanks.
 
-If there are any questions about source code, please do not hesitate to contact me (kai.wang@scu.edu.cn).
+If there are any questions about source code, please do not hesitate to contact Ju Li(leeju96@qq.com) and me (kai.wang@scu.edu.cn).
 
 ![the overview of CRAB](./assets/CRAB.png)
 ![The overview of the image of the magnetic tile dataset](./assets/magnetic.png)
