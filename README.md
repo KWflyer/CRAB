@@ -44,5 +44,5 @@ Similarly, How to reproduce the experimental results of surface defect detection
 
 Tips: The experimental results included in the above "Experimental_Results" files are re-calculated when submitting code, which may be a slight deviation from the results reported in our paper due to the effects of randomness of choosing training samples.
 
-### reference：
+### reference：The original Magnetic tile (MT) dataset is available at: https://github.com/abin24/Saliency-detection-toolbox
 1. Y. Huang, C. Qiu, K. Yuan, Surface defect saliency of magnetic tile, The Visual Computer 36 (2020) 85–96.
