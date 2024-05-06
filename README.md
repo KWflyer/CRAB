@@ -2,7 +2,7 @@
 
 Ju Li，Kai Wang, Mengfan He, Luyao Ke, and Heng Wang. Attention-Based Convolution Neural Network for Magnetic Tile Surface Defect Classification and Detection[J]. Applied Soft Computing, 2024: 111631. (https://doi.org/10.1016/j.asoc.2024.111631)
 
-If you find this paper is useful and helpful to your work, please cite our paper in your research work. Thanks.
+If you find this code is useful and helpful to your work, please cite our paper in your research work. Thanks.
 
 If there are any questions about source code, please do not hesitate to contact Ju Li(leeju96@qq.com) and me (kai.wang@scu.edu.cn). Special thanks to Yang Wei for helping to arrange and re-implement the code.
 
