@@ -14,7 +14,7 @@ If there are any questions about source code, please do not hesitate to contact 
 The proposed methods are implemented in Python 3.7 with PyTorch framework on a desktop computer equipped with an Intel i9 7920X CPU and an NVIDIA RTX 3090 GPU.
 
 ### Dataset used in this paper:
-1.	[CIFAR-10 & CIFAR-100](http://www.cs.toronto.edu/~kriz/cifar.html)
+1.	[CIFAR-10 & CIFAR-100] http://www.cs.toronto.edu/~kriz/cifar.html
 2.	[CALTECH 101](https://data.caltech.edu/records/mzrjq-6wc02)
 3.	[Magnetic tile](https://github.com/Charmve/Surface-Defect-Detection/tree/master/Magnetic-Tile-Defect)
 4.  [AMT](https://drive.google.com/drive/folders/1owZ7zUVrhdYS6AgBr9luczfsNgPcsEut?usp=drive_link)
