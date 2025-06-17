@@ -17,7 +17,7 @@ The proposed methods are implemented in Python 3.7 with PyTorch framework on a d
 1.	[CIFAR-10 & CIFAR-100](http://www.cs.toronto.edu/~kriz/cifar.html)
 2.	[CALTECH 101](https://data.caltech.edu/records/mzrjq-6wc02)
 3.	[Magnetic tile](https://github.com/Charmve/Surface-Defect-Detection/tree/master/Magnetic-Tile-Defect)
-4.  [AMT](https://pan.baidu.com/s/1lofG73Xg4Hz6ytBP30eBmg?pwd=79l7)
+4.  [AMT](https://drive.google.com/drive/folders/1owZ7zUVrhdYS6AgBr9luczfsNgPcsEut?usp=drive_link)
 
 ### Experimental results:
 1.	Surface defect classification based on Resnet-18 and 50 with CIFAR-10 dataset.
